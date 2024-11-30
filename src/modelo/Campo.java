@@ -22,12 +22,12 @@ public class Campo {
     }
 
     boolean adicionarVizinho(Campo vizinho) {
-        boolean linhaDiferente = this.linha != vizinho.linha;
-        boolean colunaDiferente = this.coluna != vizinho.coluna;
+        boolean linhaDiferente = linha != vizinho.linha;
+        boolean colunaDiferente = coluna != vizinho.coluna;
         boolean diagonal = linhaDiferente && colunaDiferente;
 
-        int deltaLinha = Math.abs(this.linha - vizinho.linha);
-        int deltaColuna = Math.abs(this.coluna - vizinho.coluna);
+        int deltaLinha = Math.abs(linha - vizinho.linha);
+        int deltaColuna = Math.abs(coluna - vizinho.coluna);
         int deltaGeral = deltaColuna + deltaLinha;
 
 
@@ -42,7 +42,7 @@ public class Campo {
         }
     }
 
-    void alternarMarcado() {
+    void alternarMarcacao() {
         if(!aberto) {
             marcado = !marcado;
         }
@@ -70,4 +70,22 @@ public class Campo {
     boolean vizinhancaSegura() {
         return vizinhos.stream().noneMatch(v -> v.minado);
     }
+
+    void minar() {
+        minado = true;
+    }
+
+    public boolean isMarcado() {
+        return marcado;
+    }
+
+    public boolean isAberto() {
+        return aberto;
+    }
+
+    public boolean isFechado() {
+        return !isAberto();
+    }
+
 }
+
