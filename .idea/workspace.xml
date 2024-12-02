@@ -5,10 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cbabe7f2-e054-4578-8ced-ae143c6dc773" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/modelo/Campo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/modelo/Campo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/modelo/CampoTeste.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/modelo/CampoTeste.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modelo/Tabuleiro.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/modelo/Tabuleiro.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,43 +38,43 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Main.executor": "Run",
-    "JAR Application.junit-4.13.1.jar.executor": "Run",
-    "JUnit.CampoTeste.executor": "Coverage",
-    "JUnit.CampoTeste.testeAbrirComVizinhos.executor": "Run",
-    "JUnit.CampoTeste.testeAbrirMinadoMarcado.executor": "Run",
-    "JUnit.CampoTeste.testeAbrirMinadoNaoMarcado.executor": "Run",
-    "JUnit.CampoTeste.testeAbrirNaoMinadoMarcado.executor": "Run",
-    "JUnit.CampoTeste.testeAbrirNaoMinadoNaoMarcado.executor": "Coverage",
-    "JUnit.CampoTeste.testeAlternarMarcacao.executor": "Run",
-    "JUnit.CampoTeste.testeAlternarMarcacaoDuasChamadas.executor": "Run",
-    "JUnit.CampoTeste.testeNaoVizinho.executor": "Run",
-    "JUnit.CampoTeste.testeValorPadraoAtributoMarcado.executor": "Run",
-    "JUnit.CampoTeste.testeVizinhoRealDistancia1.executor": "Coverage",
-    "JUnit.InicialTest.executor": "Run",
-    "JUnit.InicialTest.testarSeIgualATres.executor": "Run",
-    "JUnit.InicialTest.verificarJUnit.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Program Files/JetBrains/IntelliJ IDEA 2024.2.3/lib/junit4.jar",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "onboarding.tips.debug.path": "C:/Users/gui_p/IdeaProjects/CampoMinado/src/Main.java",
-    "project.structure.last.edited": "Libraries",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.31034482",
-    "run.code.analysis.last.selected.profile": "pProject Default",
-    "settings.editor.selected.configurable": "Errors",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;JAR Application.junit-4.13.1.jar.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.CampoTeste.executor&quot;: &quot;Coverage&quot;,
+    &quot;JUnit.CampoTeste.testeAbrirComVizinhos.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.CampoTeste.testeAbrirMinadoMarcado.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.CampoTeste.testeAbrirMinadoNaoMarcado.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.CampoTeste.testeAbrirNaoMinadoMarcado.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.CampoTeste.testeAbrirNaoMinadoNaoMarcado.executor&quot;: &quot;Coverage&quot;,
+    &quot;JUnit.CampoTeste.testeAlternarMarcacao.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.CampoTeste.testeAlternarMarcacaoDuasChamadas.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.CampoTeste.testeNaoVizinho.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.CampoTeste.testeValorPadraoAtributoMarcado.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.CampoTeste.testeVizinhoRealDistancia1.executor&quot;: &quot;Coverage&quot;,
+    &quot;JUnit.InicialTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.InicialTest.testarSeIgualATres.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.InicialTest.verificarJUnit.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Program Files/JetBrains/IntelliJ IDEA 2024.2.3/lib/junit4.jar&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/gui_p/IdeaProjects/CampoMinado/src/Main.java&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.31034482&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;Errors&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="JUnit.CampoTeste">
     <configuration name="CampoTeste" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CampoMinado" />
@@ -169,8 +168,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9823dce3aa75-28b599e66164-intellij.indexing.shared.core-IU-242.23339.11" />
-        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-IU-242.23339.11" />
+        <option value="bundled-jdk-9823dce3aa75-28b599e66164-intellij.indexing.shared.core-IU-242.24807.4" />
+        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-IU-242.24807.4" />
       </set>
     </attachedChunks>
   </component>
@@ -186,7 +185,10 @@
       <workItem from="1732727641891" duration="2594000" />
       <workItem from="1732744802133" duration="1921000" />
       <workItem from="1732842510587" duration="2926000" />
-      <workItem from="1732991171362" duration="6304000" />
+      <workItem from="1732991171362" duration="6541000" />
+      <workItem from="1733021776814" duration="4000" />
+      <workItem from="1733097825212" duration="2229000" />
+      <workItem from="1733106337454" duration="1264000" />
     </task>
     <servers />
   </component>
@@ -224,7 +226,7 @@
     <SUITE FILE_PATH="coverage/CampoMinado$CampoTeste_testeAbrirNaoMinadoMarcado.ic" NAME="CampoTeste.testeAbrirNaoMinadoMarcado Coverage Results" MODIFIED="1732996808904" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
       <FILTER>modelo.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/CampoMinado$CampoTeste.ic" NAME="CampoTeste Coverage Results" MODIFIED="1732999895962" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
+    <SUITE FILE_PATH="coverage/CampoMinado$CampoTeste.ic" NAME="CampoTeste Coverage Results" MODIFIED="1733099730976" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
       <FILTER>modelo.*</FILTER>
     </SUITE>
   </component>
