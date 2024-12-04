@@ -7,7 +7,6 @@
     <list default="true" id="cbabe7f2-e054-4578-8ced-ae143c6dc773" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/dev/gargenta/Aplicacao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/gargenta/Aplicacao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dev/gargenta/modelo/Campo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/gargenta/modelo/Campo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/dev/gargenta/modelo/Tabuleiro.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/gargenta/modelo/Tabuleiro.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/dev/gargenta/visao/TabuleiroConsole.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/gargenta/visao/TabuleiroConsole.java" afterDir="false" />
     </list>
@@ -190,7 +189,7 @@
       <workItem from="1733106337454" duration="2037000" />
       <workItem from="1733192173747" duration="3291000" />
       <workItem from="1733272249152" duration="8000" />
-      <workItem from="1733281320797" duration="10483000" />
+      <workItem from="1733281320797" duration="11796000" />
     </task>
     <servers />
   </component>
