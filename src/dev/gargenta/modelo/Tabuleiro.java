@@ -1,5 +1,7 @@
 package dev.gargenta.modelo;
 
+import dev.gargenta.excecao.ExplosaoException;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.function.Predicate;
@@ -23,10 +25,15 @@ public class Tabuleiro {
     }
 
     public void abrir(int linha, int coluna) {
-        campos.parallelStream()
-                .filter(campo -> campo.getLinha() == linha && campo.getColuna() == coluna)
-                .findFirst()
-                .ifPresent(Campo::abrir); // Lambda: campo -> campo.abrir()
+        try {
+            campos.parallelStream()
+                    .filter(campo -> campo.getLinha() == linha && campo.getColuna() == coluna)
+                    .findFirst()
+                    .ifPresent(Campo::abrir); // Lambda: campo -> campo.abrir()
+        } catch (ExplosaoException e) {
+           campos.forEach(c -> c.setAberto(true));
+           throw e;
+        }
     }
 
     public void alternarMarcacao(int linha, int coluna) {
