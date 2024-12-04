@@ -5,14 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cbabe7f2-e054-4578-8ced-ae143c6dc773" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dev/gargenta/visao/Aplicacao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/dev/gargenta/excecao/SairExcetpion.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/dev/gargenta/visao/TabuleiroConsole.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/excecao/ExplosaoException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/gargenta/excecao/ExplosaoException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modelo/Campo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/gargenta/modelo/Campo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modelo/Tabuleiro.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/gargenta/modelo/Tabuleiro.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/modelo/CampoTeste.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/dev/gargenta/modelo/CampoTeste.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dev/gargenta/visao/Aplicacao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/gargenta/Aplicacao.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,11 +75,16 @@
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.31034482",
     "run.code.analysis.last.selected.profile": "pProject Default",
-    "settings.editor.selected.configurable": "Errors",
+    "settings.editor.selected.configurable": "preferences.editor",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="dev.gargenta" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.dev.gargenta.Aplicacao">
     <configuration name="Aplicacao" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="dev.gargenta.excecao.Aplicacao" />
       <module name="CampoMinado" />
@@ -91,12 +92,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="dev.gargenta.visao.Aplicacao" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="dev.gargenta.visao.Aplicacao" />
+    <configuration name="dev.gargenta.Aplicacao" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="dev.gargenta.Aplicacao" />
       <module name="CampoMinado" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="dev.gargenta.visao.*" />
+          <option name="PATTERN" value="dev.gargenta.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -154,9 +155,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.dev.gargenta.Aplicacao" />
         <item itemvalue="JUnit.CampoTeste" />
         <item itemvalue="JUnit.CampoTeste.testeAlternarMarcacaoDuasChamadas" />
-        <item itemvalue="Application.dev.gargenta.visao.Aplicacao" />
         <item itemvalue="Application.Aplicacao" />
         <item itemvalue="JUnit.CampoTeste.testeAbrirComVizinhos" />
       </list>
@@ -188,7 +189,7 @@
       <workItem from="1733106337454" duration="2037000" />
       <workItem from="1733192173747" duration="3291000" />
       <workItem from="1733272249152" duration="8000" />
-      <workItem from="1733281320797" duration="6047000" />
+      <workItem from="1733281320797" duration="9773000" />
     </task>
     <servers />
   </component>
