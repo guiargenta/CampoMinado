@@ -1,7 +1,6 @@
-package modelo;
+package dev.gargenta.modelo;
 
-import excecao.ExplosaoException;
-
+import dev.gargenta.excecao.ExplosaoException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -67,11 +66,11 @@ public class Campo {
         return false;
     }
 
-    boolean vizinhancaSegura() {
+    public boolean vizinhancaSegura() {
         return vizinhos.stream().noneMatch(v -> v.minado);
     }
 
-    void minar() {
+    public void minar() {
         minado = true;
     }
 
@@ -99,17 +98,17 @@ public class Campo {
         return coluna;
     }
 
-    public boolean objetivoAlcancado() {
+    boolean objetivoAlcancado() {
         boolean desvendado = !minado && aberto;
         boolean protegido = minado && marcado;
         return desvendado || protegido;
     }
 
-    public long minasNaVizinhanca() {
+    long minasNaVizinhanca() {
         return vizinhos.stream().filter(v -> v.minado).count();
     }
 
-    public void reiniciar() {
+    void reiniciar() {
         aberto = false;
         minado = false;
         marcado = false;

@@ -1,4 +1,4 @@
-package modelo;
+package dev.gargenta.modelo;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -22,7 +22,22 @@ public class Tabuleiro {
         sortearMinas();
     }
 
-    private void gerarCampos() {
+    public void abrir(int linha, int coluna) {
+        campos.parallelStream()
+                .filter(campo -> campo.getLinha() == linha && campo.getColuna() == coluna)
+                .findFirst()
+                .ifPresent(Campo::abrir); // Lambda: campo -> campo.abrir()
+    }
+
+    public void alternarMarcacao(int linha, int coluna) {
+        campos.parallelStream()
+                .filter(campo -> campo.getLinha() == linha && campo.getColuna() == coluna)
+                .findFirst()
+                .ifPresent(campo -> campo.alternarMarcacao());
+                // .ifPresent(Campo::alternarMarcacao)
+    }
+
+    private void gerarCampos( ) {
         for (int l = 0; l < linhas; l++) {
             for (int c = 0; c < colunas; c++) {
                 campos.add(new Campo(l, c));
@@ -46,6 +61,7 @@ public class Tabuleiro {
         do {
             minasArmadas = campos.stream().filter(minado).count();
             int aleatorio = (int) (Math.random() * campos.size());
+            campos.get(aleatorio).minar();
         } while(minasArmadas < minas);
     }
 
@@ -56,7 +72,22 @@ public class Tabuleiro {
     public void reiniciar() {
         campos.forEach(Campo::reiniciar); // campos.stream().forEach(c -> c.reiniciar());
         sortearMinas();
+    }
 
+    public String toString() {
+        StringBuilder sb = new StringBuilder();
+
+        int i = 0;
+        for (int l = 0; l < linhas; l++) {
+            for (int c = 0; c < colunas; c++) {
+                sb.append(" ");
+                sb.append(campos.get(i));
+                sb.append(" ");
+                i++;
+            }
+            sb.append("\n");
+        }
+        return sb.toString();
     }
 }
 

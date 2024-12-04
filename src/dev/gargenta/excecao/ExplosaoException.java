@@ -1,4 +1,4 @@
-package excecao;
+package dev.gargenta.excecao;
 
 import java.io.Serial;
 

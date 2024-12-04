@@ -5,9 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cbabe7f2-e054-4578-8ced-ae143c6dc773" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/dev/gargenta/visao/Aplicacao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modelo/Campo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/modelo/Campo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modelo/Tabuleiro.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/modelo/Tabuleiro.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/excecao/ExplosaoException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/gargenta/excecao/ExplosaoException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modelo/Campo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/gargenta/modelo/Campo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modelo/Tabuleiro.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/gargenta/modelo/Tabuleiro.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/modelo/CampoTeste.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/dev/gargenta/modelo/CampoTeste.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,44 +43,67 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
-    &quot;JAR Application.junit-4.13.1.jar.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.CampoTeste.executor&quot;: &quot;Coverage&quot;,
-    &quot;JUnit.CampoTeste.testeAbrirComVizinhos.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.CampoTeste.testeAbrirMinadoMarcado.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.CampoTeste.testeAbrirMinadoNaoMarcado.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.CampoTeste.testeAbrirNaoMinadoMarcado.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.CampoTeste.testeAbrirNaoMinadoNaoMarcado.executor&quot;: &quot;Coverage&quot;,
-    &quot;JUnit.CampoTeste.testeAlternarMarcacao.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.CampoTeste.testeAlternarMarcacaoDuasChamadas.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.CampoTeste.testeNaoVizinho.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.CampoTeste.testeValorPadraoAtributoMarcado.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.CampoTeste.testeVizinhoRealDistancia1.executor&quot;: &quot;Coverage&quot;,
-    &quot;JUnit.InicialTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.InicialTest.testarSeIgualATres.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.InicialTest.verificarJUnit.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Program Files/JetBrains/IntelliJ IDEA 2024.2.3/lib/junit4.jar&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/gui_p/IdeaProjects/CampoMinado/src/Main.java&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.31034482&quot;,
-    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;Errors&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Aplicacao.executor": "Run",
+    "Application.Main.executor": "Run",
+    "Application.dev.gargenta.Aplicacao.executor": "Run",
+    "Application.dev.gargenta.visao.Aplicacao.executor": "Run",
+    "JAR Application.junit-4.13.1.jar.executor": "Run",
+    "JUnit.CampoTeste.executor": "Coverage",
+    "JUnit.CampoTeste.testeAbrirComVizinhos.executor": "Run",
+    "JUnit.CampoTeste.testeAbrirMinadoMarcado.executor": "Run",
+    "JUnit.CampoTeste.testeAbrirMinadoNaoMarcado.executor": "Run",
+    "JUnit.CampoTeste.testeAbrirNaoMinadoMarcado.executor": "Run",
+    "JUnit.CampoTeste.testeAbrirNaoMinadoNaoMarcado.executor": "Coverage",
+    "JUnit.CampoTeste.testeAlternarMarcacao.executor": "Run",
+    "JUnit.CampoTeste.testeAlternarMarcacaoDuasChamadas.executor": "Debug",
+    "JUnit.CampoTeste.testeNaoVizinho.executor": "Run",
+    "JUnit.CampoTeste.testeValorPadraoAtributoMarcado.executor": "Run",
+    "JUnit.CampoTeste.testeVizinhoRealDistancia1.executor": "Coverage",
+    "JUnit.InicialTest.executor": "Run",
+    "JUnit.InicialTest.testarSeIgualATres.executor": "Run",
+    "JUnit.InicialTest.verificarJUnit.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Program Files/JetBrains/IntelliJ IDEA 2024.2.3/lib/junit4.jar",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "onboarding.tips.debug.path": "C:/Users/gui_p/IdeaProjects/CampoMinado/src/Main.java",
+    "project.structure.last.edited": "Libraries",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.31034482",
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "settings.editor.selected.configurable": "Errors",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
-  <component name="RunManager" selected="JUnit.CampoTeste">
+}]]></component>
+  <component name="RunManager">
+    <configuration name="Aplicacao" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="dev.gargenta.excecao.Aplicacao" />
+      <module name="CampoMinado" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="dev.gargenta.visao.Aplicacao" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="dev.gargenta.visao.Aplicacao" />
+      <module name="CampoMinado" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="dev.gargenta.visao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="CampoTeste" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CampoMinado" />
       <extension name="coverage">
@@ -84,8 +112,9 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="modelo" />
-      <option name="MAIN_CLASS_NAME" value="modelo.CampoTeste" />
+      <option name="PACKAGE_NAME" value="dev.gargenta.modelo" />
+      <option name="MAIN_CLASS_NAME" value="dev.gargenta.modelo.CampoTeste" />
+      <option name="METHOD_NAME" value="" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -107,49 +136,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CampoTeste.testeAbrirMinadoMarcado" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CampoTeste.testeAlternarMarcacaoDuasChamadas" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CampoMinado" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="modelo.*" />
+          <option name="PATTERN" value="dev.gargenta.modelo.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="modelo" />
-      <option name="MAIN_CLASS_NAME" value="modelo.CampoTeste" />
-      <option name="METHOD_NAME" value="testeAbrirMinadoMarcado" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CampoTeste.testeAbrirMinadoNaoMarcado" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="CampoMinado" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="modelo.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="modelo" />
-      <option name="MAIN_CLASS_NAME" value="modelo.CampoTeste" />
-      <option name="METHOD_NAME" value="testeAbrirMinadoNaoMarcado" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CampoTeste.testeAbrirNaoMinadoMarcado" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="CampoMinado" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="modelo.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="modelo" />
-      <option name="MAIN_CLASS_NAME" value="modelo.CampoTeste" />
-      <option name="METHOD_NAME" value="testeAbrirNaoMinadoMarcado" />
+      <option name="PACKAGE_NAME" value="dev.gargenta.modelo" />
+      <option name="MAIN_CLASS_NAME" value="dev.gargenta.modelo.CampoTeste" />
+      <option name="METHOD_NAME" value="testeAlternarMarcacaoDuasChamadas" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -158,10 +155,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.CampoTeste" />
+        <item itemvalue="JUnit.CampoTeste.testeAlternarMarcacaoDuasChamadas" />
+        <item itemvalue="Application.dev.gargenta.visao.Aplicacao" />
+        <item itemvalue="Application.Aplicacao" />
         <item itemvalue="JUnit.CampoTeste.testeAbrirComVizinhos" />
-        <item itemvalue="JUnit.CampoTeste.testeAbrirMinadoNaoMarcado" />
-        <item itemvalue="JUnit.CampoTeste.testeAbrirMinadoMarcado" />
-        <item itemvalue="JUnit.CampoTeste.testeAbrirNaoMinadoMarcado" />
       </list>
     </recent_temporary>
   </component>
@@ -189,7 +186,9 @@
       <workItem from="1733021776814" duration="4000" />
       <workItem from="1733097825212" duration="2229000" />
       <workItem from="1733106337454" duration="2037000" />
-      <workItem from="1733192173747" duration="3101000" />
+      <workItem from="1733192173747" duration="3291000" />
+      <workItem from="1733272249152" duration="8000" />
+      <workItem from="1733281320797" duration="6047000" />
     </task>
     <servers />
   </component>
@@ -221,14 +220,15 @@
     <SUITE FILE_PATH="coverage/CampoMinado$CampoTeste_testeAlternarMarcacaoDuasChamadas.ic" NAME="CampoTeste.testeAlternarMarcacaoDuasChamadas Coverage Results" MODIFIED="1732992497215" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
       <FILTER>modelo.*</FILTER>
     </SUITE>
+    <SUITE FILE_PATH="coverage/CampoMinado$Aplicacao.ic" NAME="Aplicacao Coverage Results" MODIFIED="1733282474935" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
     <SUITE FILE_PATH="coverage/CampoMinado$CampoTeste_testeVizinhoRealDistancia1.ic" NAME="CampoTeste.testeVizinhoRealDistancia1 Coverage Results" MODIFIED="1732746124230" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
       <FILTER>modelo.*</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/CampoMinado$CampoTeste_testeAbrirNaoMinadoMarcado.ic" NAME="CampoTeste.testeAbrirNaoMinadoMarcado Coverage Results" MODIFIED="1732996808904" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
       <FILTER>modelo.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/CampoMinado$CampoTeste.ic" NAME="CampoTeste Coverage Results" MODIFIED="1733099730976" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
-      <FILTER>modelo.*</FILTER>
+    <SUITE FILE_PATH="coverage/CampoMinado$CampoTeste.ic" NAME="CampoTeste Coverage Results" MODIFIED="1733332198668" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
+      <FILTER>dev.gargenta.modelo.*</FILTER>
     </SUITE>
   </component>
 </project>

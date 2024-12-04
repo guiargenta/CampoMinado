@@ -1,7 +1,7 @@
-package modelo;
+package dev.gargenta.modelo;
 
-import excecao.ExplosaoException;
-import org.junit.Assert;
+import dev.gargenta.excecao.ExplosaoException;
+import dev.gargenta.modelo.Campo;
 import org.junit.Before;
 import org.junit.Test;
 
